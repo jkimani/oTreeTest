@@ -1,0 +1,25 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+
+       Participant 3 punish Page
+
+{% endblock %}
+
+{% block content %}
+
+    <p>
+
+            Participant 1 offered participant 2 {{ group.amount_offered }} out of the total {{ Constants.endowment }}.
+
+    </p>
+
+    <div class="form-group required">
+        <label class="control-label">Do you wish to Punish participant 1?</label>
+        <div class="controls">
+            <button name="offer_accepted" value="True" class="btn btn-primary btn-large">Yes</button>
+            <button name="offer_accepted" value="False" class="btn btn-primary btn-large">No</button>
+        </div>
+    </div>
+{% endblock %}
